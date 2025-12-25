@@ -154,7 +154,7 @@ export const perfumes = [
   {
     id: 11,
     name: "ART OF WOOD (Lattafa) — del set",
-    image: "https://oudroma.com/cdn/shop/files/D_NQ_NP_2X_621688-MLU72637656683_112023-F.webp?v=1698966579&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/skgmxs8i_image.png",
     bottlePrice: null,
     decant10ml: 190,
     promo2x10ml: 360,
