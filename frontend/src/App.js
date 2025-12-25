@@ -47,9 +47,6 @@ const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCa
         <Hero />
         <Features />
         <ProductGrid onAddToCart={addToCart} />
-        <TikTokReviews />
-        <Categories />
-        <CustomerReviews />
       </main>
 
       <Footer />
