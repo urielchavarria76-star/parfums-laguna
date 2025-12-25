@@ -390,6 +390,66 @@ export const perfumes = [
     reviews: 18,
     category: "unisex",
     badge: "Popular"
+  },
+  {
+    id: 28,
+    name: "Jean Paul Gaultier Scandal EDT 100 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/kxyuhfy8_image.png",
+    bottlePrice: 1715,
+    decant10ml: 230,
+    promo2x10ml: 435,
+    promo3x10ml: 620,
+    originalPrice: 2900,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 4.9,
+    reviews: 21,
+    category: "mujer",
+    badge: "Nuevo"
+  },
+  {
+    id: 29,
+    name: "Paco Rabanne One Million EDT 100 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/pkij19nb_image.png",
+    bottlePrice: 1720,
+    decant10ml: 235,
+    promo2x10ml: 445,
+    promo3x10ml: 635,
+    originalPrice: 2850,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 5.0,
+    reviews: 34,
+    category: "hombre",
+    badge: "Clásico"
+  },
+  {
+    id: 30,
+    name: "Giorgio Armani Acqua di Gio EDT 100 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/szu55erv_image.png",
+    bottlePrice: 1890,
+    decant10ml: 255,
+    promo2x10ml: 485,
+    promo3x10ml: 690,
+    originalPrice: 3200,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 5.0,
+    reviews: 42,
+    category: "hombre",
+    badge: "Bestseller"
+  },
+  {
+    id: 31,
+    name: "Hugo Boss Bottled EDP 200 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/g071g3vu_image.png",
+    bottlePrice: 1400,
+    decant10ml: 190,
+    promo2x10ml: 360,
+    promo3x10ml: 515,
+    originalPrice: 2400,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 4.8,
+    reviews: 28,
+    category: "hombre",
+    badge: "Gran Tamaño"
   }
 ];
 
