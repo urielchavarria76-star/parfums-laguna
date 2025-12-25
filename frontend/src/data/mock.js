@@ -230,7 +230,7 @@ export const perfumes = [
     id: 16,
     name: "Sceptre Malachite 100 ml",
     image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/gwu5gvc6_image.png",
-    bottlePrice: 575,
+    bottlePrice: 750,
     decant10ml: 90,
     promo2x10ml: 170,
     promo3x10ml: 240,
