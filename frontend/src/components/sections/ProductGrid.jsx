@@ -19,7 +19,7 @@ const ProductGrid = ({ onAddToCart }) => {
       case 'mujer':
         return perfumes.filter(p => p.category === 'mujer');
       case 'lanzamientos':
-        return perfumes.filter(p => [22, 23, 24, 25, 26, 27, 15, 16].includes(p.id));
+        return perfumes.filter(p => [28, 29, 30, 31, 22, 23, 24, 25].includes(p.id));
       default:
         return perfumes.slice(0, 12);
     }
