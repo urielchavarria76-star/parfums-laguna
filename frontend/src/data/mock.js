@@ -94,7 +94,7 @@ export const perfumes = [
   {
     id: 7,
     name: "ARMAF ODYSSEY MANDARIN SKY ELIXIR 100 ml",
-    image: "https://oudroma.com/cdn/shop/files/41AJa1lJ7YL._SY300_SX300_QL70_FMwebp.webp?v=1715961025&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/jed0qc9r_image.png",
     bottlePrice: 1075,
     decant10ml: 160,
     promo2x10ml: 305,
