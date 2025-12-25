@@ -3,12 +3,13 @@ import { perfumes } from '../../data/mock';
 
 const DECANT_IMAGE = "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/gzrl04dy_Imagen%20de%20WhatsApp%202025-12-25%20a%20las%2003.22.15_58fe861f.jpg";
 
-// Calculate decant price: base cost ($10) + 12% of bottle price
+// Calculate decant price: (10% of bottle price + materials) × 1.5 margin
 const calculateDecantPrice = (bottlePrice) => {
   if (!bottlePrice) return null;
-  const baseCost = 10; // $8 bottle + $2 printing
-  const perfumeCost = bottlePrice * 0.12;
-  return Math.round(baseCost + perfumeCost);
+  const perfumeCost = bottlePrice * 0.10; // 10ml = 10% of 100ml bottle
+  const materialsCost = 10; // $8 bottle + $2 printing
+  const margin = 1.5; // 50% profit margin
+  return Math.round((perfumeCost + materialsCost) * margin);
 };
 
 const DecantGrid = ({ onAddToCart }) => {
