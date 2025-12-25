@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
         <img
           src="https://oudroma.com/cdn/shop/files/pagina1_1_3600x.jpg?v=1764983122"
-          alt="OudRoma Banner"
+          alt="Parfums TRC Banner"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 z-20 flex items-center">
@@ -45,7 +45,7 @@ const Hero = () => {
       <div className="relative h-[30vh] md:h-[35vh] overflow-hidden">
         <img
           src="https://oudroma.com/cdn/shop/files/banner_escalonado_dek_3600x.jpg?v=1763588998"
-          alt="Promociones OudRoma"
+          alt="Promociones Parfums TRC"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
