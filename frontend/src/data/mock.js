@@ -260,7 +260,7 @@ export const perfumes = [
     id: 18,
     name: "LATTAFA YARA EDP 100ML",
     image: "https://oudroma.com/cdn/shop/files/LATTAFA.jpg?v=1698965917&width=533",
-    bottlePrice: 680,
+    bottlePrice: 850,
     decant10ml: 100,
     promo2x10ml: 190,
     promo3x10ml: 270,
