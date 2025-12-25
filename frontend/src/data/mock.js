@@ -124,7 +124,7 @@ export const perfumes = [
   {
     id: 9,
     name: "AL HARAMAIN AMBER OUD GOLD EDITION EDP 120 ml",
-    image: "https://oudroma.com/cdn/shop/files/lattafa-asad-elixir-strong-masculine-perfume.webp?v=1763529411&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/4lvucn10_image.png",
     bottlePrice: 1350,
     decant10ml: 165,
     promo2x10ml: 315,
