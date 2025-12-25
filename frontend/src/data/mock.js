@@ -287,21 +287,6 @@ export const perfumes = [
     badge: null
   },
   {
-    id: 20,
-    name: "LATTAFA ASAD ZANZIBAR 100ML EDP",
-    image: "https://oudroma.com/cdn/shop/files/81CGdyQNc8L._SL1500.jpg?v=1710792989&width=533",
-    bottlePrice: 485,
-    decant10ml: 75,
-    promo2x10ml: 140,
-    promo3x10ml: 200,
-    originalPrice: 1240,
-    format: "Atomizador 10 ml (spray) • Etiqueta • Empaque antifu",
-    rating: 4.8,
-    reviews: 16,
-    category: "hombre",
-    badge: null
-  },
-  {
     id: 21,
     name: "MAISON ALHAMBRA BAROQUE ROGUE 540 UNISEX EDP 100ML",
     image: "https://oudroma.com/cdn/shop/files/D_NQ_NP_2X_716964-MLU70518628398_072023-F.webp?v=1698963819&width=533",
