@@ -275,7 +275,7 @@ export const perfumes = [
     id: 19,
     name: "ARMAF ODYSSEY CANDEE 100ML EDP",
     image: "https://oudroma.com/cdn/shop/files/D_NQ_NP_750180-MLM78773183066_092024-O.webp?v=1734395995&width=533",
-    bottlePrice: 620,
+    bottlePrice: 820,
     decant10ml: 95,
     promo2x10ml: 180,
     promo3x10ml: 255,
