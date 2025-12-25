@@ -43,7 +43,7 @@ const NewsletterPopup = ({ isOpen, onClose }) => {
           <div className="h-32 bg-gradient-to-r from-[#c9a962]/20 to-[#c9a962]/5 flex items-center justify-center">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-white">
-                <span className="text-[#c9a962]">Oud</span>Roma
+                <span className="text-[#c9a962]">Parfums</span> TRC
               </h3>
             </div>
           </div>

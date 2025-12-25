@@ -35,7 +35,7 @@ const Header = ({ cartCount, onCartClick, onMenuClick }) => {
             {/* Logo */}
             <a href="/" className="flex items-center">
               <h1 className="text-2xl md:text-3xl font-bold text-white tracking-wider">
-                <span className="text-[#c9a962]">Oud</span>Roma
+                <span className="text-[#c9a962]">Parfums</span> TRC
               </h1>
             </a>
 

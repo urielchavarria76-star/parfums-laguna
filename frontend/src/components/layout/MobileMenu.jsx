@@ -27,7 +27,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-[#333]">
           <h2 className="text-xl font-bold text-white">
-            <span className="text-[#c9a962]">Oud</span>Roma
+            <span className="text-[#c9a962]">Parfums</span> TRC
           </h2>
           <button 
             onClick={onClose}

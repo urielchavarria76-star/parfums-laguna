@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h2 className="text-2xl font-bold mb-4">
-              <span className="text-[#c9a962]">Oud</span>Roma
+              <span className="text-[#c9a962]">Parfums</span> TRC
             </h2>
             <p className="text-gray-400 text-sm mb-4">
               Venta de perfumes Árabes, Diseñador, Nicho. Mayoreo y Menudeo. Envíos a todo México.
