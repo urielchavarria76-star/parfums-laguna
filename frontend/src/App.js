@@ -1,50 +1,134 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+// Layout Components
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import MobileMenu from './components/layout/MobileMenu';
+import CartDrawer from './components/cart/CartDrawer';
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+// Section Components
+import Hero from './components/sections/Hero';
+import Features from './components/sections/Features';
+import ProductGrid from './components/sections/ProductGrid';
+import Categories from './components/sections/Categories';
+import TikTokReviews from './components/sections/TikTokReviews';
+import CustomerReviews from './components/sections/CustomerReviews';
+import NewsletterPopup from './components/sections/NewsletterPopup';
+import WhatsAppButton from './components/sections/WhatsAppButton';
 
+// Home Page Component
+const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCartOpen }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [newsletterOpen, setNewsletterOpen] = useState(false);
+
+  // Show newsletter popup after 5 seconds
   useEffect(() => {
-    helloWorldApi();
+    const timer = setTimeout(() => {
+      const hasSeenPopup = sessionStorage.getItem('newsletter_shown');
+      if (!hasSeenPopup) {
+        setNewsletterOpen(true);
+        sessionStorage.setItem('newsletter_shown', 'true');
+      }
+    }, 5000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="min-h-screen bg-black">
+      <Header 
+        cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} 
+        onCartClick={() => setCartOpen(true)}
+        onMenuClick={() => setMenuOpen(true)}
+      />
+      
+      <main>
+        <Hero />
+        <Features />
+        <ProductGrid onAddToCart={addToCart} />
+        <TikTokReviews />
+        <Categories />
+        <CustomerReviews />
+      </main>
+
+      <Footer />
+
+      {/* Overlays */}
+      <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
+      <CartDrawer 
+        isOpen={cartOpen} 
+        onClose={() => setCartOpen(false)} 
+        cart={cart}
+        updateQuantity={updateQuantity}
+        removeFromCart={removeFromCart}
+      />
+      <NewsletterPopup isOpen={newsletterOpen} onClose={() => setNewsletterOpen(false)} />
+      <WhatsAppButton />
     </div>
   );
 };
 
 function App() {
+  const [cart, setCart] = useState([]);
+  const [cartOpen, setCartOpen] = useState(false);
+
+  const addToCart = (product) => {
+    setCart(prev => {
+      const existing = prev.find(item => item.id === product.id);
+      if (existing) {
+        return prev.map(item => 
+          item.id === product.id 
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      }
+      return [...prev, { 
+        id: product.id, 
+        name: product.name, 
+        price: product.bottlePrice || product.decant10ml,
+        image: product.image,
+        quantity: 1 
+      }];
+    });
+    setCartOpen(true);
+  };
+
+  const updateQuantity = (productId, newQuantity) => {
+    if (newQuantity < 1) {
+      removeFromCart(productId);
+      return;
+    }
+    setCart(prev => 
+      prev.map(item => 
+        item.id === productId 
+          ? { ...item, quantity: newQuantity }
+          : item
+      )
+    );
+  };
+
+  const removeFromCart = (productId) => {
+    setCart(prev => prev.filter(item => item.id !== productId));
+  };
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
+          <Route 
+            path="/*" 
+            element={
+              <Home 
+                cart={cart}
+                addToCart={addToCart}
+                updateQuantity={updateQuantity}
+                removeFromCart={removeFromCart}
+                cartOpen={cartOpen}
+                setCartOpen={setCartOpen}
+              />
+            } 
+          />
         </Routes>
       </BrowserRouter>
     </div>
