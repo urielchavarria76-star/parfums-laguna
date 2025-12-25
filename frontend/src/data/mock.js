@@ -79,7 +79,7 @@ export const perfumes = [
   {
     id: 6,
     name: "LATTAFA KHAMRAH EDP 100 ml",
-    image: "https://oudroma.com/cdn/shop/files/D_NQ_NP_2X_716964-MLU70518628398_072023-F.webp?v=1698963819&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/qkrkn3yn_image.png",
     bottlePrice: 855,
     decant10ml: 130,
     promo2x10ml: 245,
