@@ -300,6 +300,66 @@ export const perfumes = [
     reviews: 52,
     category: "unisex",
     badge: "Popular"
+  },
+  {
+    id: 22,
+    name: "Bharara King 100 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/a1g4r8rb_image.png",
+    bottlePrice: 1245,
+    decant10ml: 160,
+    promo2x10ml: 305,
+    promo3x10ml: 430,
+    originalPrice: 2400,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 4.9,
+    reviews: 38,
+    category: "hombre",
+    badge: "Premium"
+  },
+  {
+    id: 23,
+    name: "Jean Paul Gaultier Le Male Elixir 100 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/vf1ev2yb_image.png",
+    bottlePrice: 2100,
+    decant10ml: 290,
+    promo2x10ml: 550,
+    promo3x10ml: 780,
+    originalPrice: 3800,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 5.0,
+    reviews: 28,
+    category: "hombre",
+    badge: "Premium"
+  },
+  {
+    id: 24,
+    name: "Jean Paul Gaultier Le Beau Le Parfum 125 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/m9328ie6_image.png",
+    bottlePrice: 1850,
+    decant10ml: 250,
+    promo2x10ml: 475,
+    promo3x10ml: 675,
+    originalPrice: 3200,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 4.9,
+    reviews: 22,
+    category: "hombre",
+    badge: "Nuevo"
+  },
+  {
+    id: 25,
+    name: "Jean Paul Gaultier Paradise Garden 75 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/a8pw7oeg_image.png",
+    bottlePrice: 1366,
+    decant10ml: 185,
+    promo2x10ml: 350,
+    promo3x10ml: 500,
+    originalPrice: 2800,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 4.8,
+    reviews: 15,
+    category: "hombre",
+    badge: "Nuevo"
   }
 ];
 
