@@ -12,28 +12,12 @@ import CartDrawer from './components/cart/CartDrawer';
 import Hero from './components/sections/Hero';
 import Features from './components/sections/Features';
 import ProductGrid from './components/sections/ProductGrid';
-import Categories from './components/sections/Categories';
-import TikTokReviews from './components/sections/TikTokReviews';
-import CustomerReviews from './components/sections/CustomerReviews';
-import NewsletterPopup from './components/sections/NewsletterPopup';
+import DecantGrid from './components/sections/DecantGrid';
 import WhatsAppButton from './components/sections/WhatsAppButton';
 
 // Home Page Component
 const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCartOpen }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [newsletterOpen, setNewsletterOpen] = useState(false);
-
-  // Show newsletter popup after 5 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const hasSeenPopup = sessionStorage.getItem('newsletter_shown');
-      if (!hasSeenPopup) {
-        setNewsletterOpen(true);
-        sessionStorage.setItem('newsletter_shown', 'true');
-      }
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="min-h-screen bg-black">
@@ -47,6 +31,7 @@ const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCa
         <Hero />
         <Features />
         <ProductGrid onAddToCart={addToCart} />
+        <DecantGrid onAddToCart={addToCart} />
       </main>
 
       <Footer />
@@ -60,7 +45,6 @@ const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCa
         updateQuantity={updateQuantity}
         removeFromCart={removeFromCart}
       />
-      <NewsletterPopup isOpen={newsletterOpen} onClose={() => setNewsletterOpen(false)} />
       <WhatsAppButton />
     </div>
   );
