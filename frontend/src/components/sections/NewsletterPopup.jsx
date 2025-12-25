@@ -53,7 +53,7 @@ const NewsletterPopup = ({ isOpen, onClose }) => {
             {!submitted ? (
               <>
                 <h4 className="text-xl font-bold text-white text-center mb-2">
-                  Se parte de OudRoma
+                  Se parte de Parfums TRC
                 </h4>
                 <p className="text-gray-400 text-center text-sm mb-6">
                   Únete a una comunidad que valora el perfume como una forma de expresión.
