@@ -19,8 +19,8 @@ const ProductGrid = ({ onAddToCart }) => {
       case 'mujer':
         return perfumes.filter(p => p.category === 'mujer');
       case 'lanzamientos':
-        // Show the newest products (Jean Lowe Immortel, Sceptre Malachite, Jean Lowe Matière, etc)
-        return perfumes.filter(p => [15, 16, 17, 4, 6].includes(p.id));
+        // Show the newest products (Jean Paul Gaultier, Bharara, etc)
+        return perfumes.filter(p => [22, 23, 24, 25, 15, 16, 17].includes(p.id));
       default:
         return perfumes.slice(0, 12);
     }
