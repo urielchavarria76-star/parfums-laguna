@@ -20,7 +20,7 @@ const DecantGrid = ({ onAddToCart }) => {
     .filter(p => p.bottlePrice)
     .map(p => ({
       ...p,
-      decantPrice: calculateDecantPrice(p.bottlePrice), // Always use formula
+      decantPrice: p.decant10ml || calculateDecantPrice(p.bottlePrice),
       isDecant: true
     }));
 
