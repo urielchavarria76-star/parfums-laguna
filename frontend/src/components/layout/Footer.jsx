@@ -55,7 +55,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-[#c9a962]">Contacto</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>WhatsApp: +52 868 235 3290</li>
-              <li>Email: contacto@oudroma.com</li>
+              <li>Email: contacto@parfumstrc.com</li>
               <li>Horario: Lun - Sáb 9:00 - 18:00</li>
             </ul>
           </div>
