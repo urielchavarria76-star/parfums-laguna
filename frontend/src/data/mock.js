@@ -109,7 +109,7 @@ export const perfumes = [
   {
     id: 8,
     name: "NITRO RED INTENSELY EDP 100 ml",
-    image: "https://oudroma.com/cdn/shop/files/D_NQ_NP_950397-MLA79655796197_092024-O.webp?v=1728407985&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/iqzlexkx_image.png",
     bottlePrice: 1230,
     decant10ml: 180,
     promo2x10ml: 340,
