@@ -139,7 +139,7 @@ export const perfumes = [
   {
     id: 10,
     name: "NEBRAS (Lattafa) — del set",
-    image: "https://oudroma.com/cdn/shop/files/D_NQ_NP_653365-MLU74707104897_022024-O.webp?v=1717463448&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/skgmxs8i_image.png",
     bottlePrice: null,
     decant10ml: 140,
     promo2x10ml: 265,
