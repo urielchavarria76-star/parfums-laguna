@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="text-sm tracking-wider uppercase text-gray-400 mb-4">Contacto</h3>
-            <p className="text-gray-500 text-sm mb-4">WhatsApp: +52 868 235 3290</p>
+            <p className="text-gray-500 text-sm mb-4">WhatsApp: +52 871 258 4098</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-[#c9a962] transition-colors">
                 <Instagram size={18} />
