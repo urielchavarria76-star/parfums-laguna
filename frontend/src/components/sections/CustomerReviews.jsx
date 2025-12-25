@@ -24,7 +24,7 @@ const CustomerReviews = () => {
             Opiniones <span className="text-[#c9a962]">100% Reales</span> de Nuestros Clientes
           </h2>
           <p className="text-gray-400 mt-4">
-            Miles de amantes de los perfumes ya compraron en <span className="text-[#c9a962] font-bold">OUDROMA</span> y esto es lo que opinan.
+            Miles de amantes de los perfumes ya compraron en <span className="text-[#c9a962] font-bold">PARFUMS TRC</span> y esto es lo que opinan.
           </p>
           <div className="mt-6 inline-flex items-center gap-2 bg-[#1a1a1a] px-6 py-3 rounded-full">
             <div className="flex">
