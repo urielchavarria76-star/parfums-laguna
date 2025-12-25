@@ -360,6 +360,36 @@ export const perfumes = [
     reviews: 15,
     category: "hombre",
     badge: "Nuevo"
+  },
+  {
+    id: 26,
+    name: "Afnan 9PM Elixir 100 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/5awd4apu_image.png",
+    bottlePrice: 1100,
+    decant10ml: 150,
+    promo2x10ml: 285,
+    promo3x10ml: 405,
+    originalPrice: 1950,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 4.9,
+    reviews: 24,
+    category: "hombre",
+    badge: "Más Vendido"
+  },
+  {
+    id: 27,
+    name: "Rayhaan 100 ml",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/v32keopy_image.png",
+    bottlePrice: 1050,
+    decant10ml: 140,
+    promo2x10ml: 265,
+    promo3x10ml: 380,
+    originalPrice: 1850,
+    format: "Atomizador 10 ml (spray) • Etiqueta",
+    rating: 4.8,
+    reviews: 18,
+    category: "unisex",
+    badge: "Popular"
   }
 ];
 
