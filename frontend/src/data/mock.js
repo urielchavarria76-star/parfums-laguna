@@ -215,7 +215,7 @@ export const perfumes = [
     id: 15,
     name: "Jean Lowe Immortel 100 ml",
     image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/5jw9hykp_image.png",
-    bottlePrice: 700,
+    bottlePrice: 800,
     decant10ml: 110,
     promo2x10ml: 200,
     promo3x10ml: 280,
