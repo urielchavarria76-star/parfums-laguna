@@ -34,7 +34,7 @@ export const perfumes = [
   {
     id: 3,
     name: "AZZARO THE MOST WANTED INTENSE 50 ml",
-    image: "https://oudroma.com/cdn/shop/files/846e4753-b1cf-4dcd-bd6b-3eb1dab0f323.67fb78a4db951cc7bc4a2ab215219a92.webp?v=1766018904&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/wxhtydns_image.png",
     bottlePrice: 1490,
     decant10ml: 280,
     promo2x10ml: 530,
