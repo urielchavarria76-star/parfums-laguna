@@ -169,7 +169,7 @@ export const perfumes = [
   {
     id: 12,
     name: "ART OF UNIVERSE (Lattafa) — del set",
-    image: "https://oudroma.com/cdn/shop/files/LATTAFA.jpg?v=1698965917&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/skgmxs8i_image.png",
     bottlePrice: null,
     decant10ml: 195,
     promo2x10ml: 370,
