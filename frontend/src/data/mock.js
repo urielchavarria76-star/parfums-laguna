@@ -184,7 +184,7 @@ export const perfumes = [
   {
     id: 13,
     name: "ANSAAM SILVER (Lattafa) — del set",
-    image: "https://oudroma.com/cdn/shop/files/61XWNFtp7nL._UF1000_1000_QL80.jpg?v=1752377091&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/skgmxs8i_image.png",
     bottlePrice: null,
     decant10ml: 145,
     promo2x10ml: 275,
