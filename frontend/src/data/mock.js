@@ -49,7 +49,7 @@ export const perfumes = [
   {
     id: 4,
     name: "ARMAF ODYSSEY BLACK FOREST EDP 100 ml",
-    image: "https://oudroma.com/cdn/shop/files/Odyssey-Artisto.webp?v=1755402525&width=533",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/jgpuiy6i_image.png",
     bottlePrice: 1045,
     decant10ml: 155,
     promo2x10ml: 295,
