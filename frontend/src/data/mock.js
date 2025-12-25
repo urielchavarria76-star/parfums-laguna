@@ -1,4 +1,4 @@
-// Mock data for Oudroma perfume store clone
+// Mock data for Parfums TRC perfume store clone
 
 export const perfumes = [
   {
