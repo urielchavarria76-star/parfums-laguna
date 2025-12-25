@@ -34,7 +34,7 @@ const Footer = () => {
               <a href="#" className="text-gray-500 hover:text-[#c9a962] transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="https://wa.me/+528682353290" className="text-gray-500 hover:text-[#c9a962] transition-colors">
+              <a href="https://wa.me/+528712584098" className="text-gray-500 hover:text-[#c9a962] transition-colors">
                 <MessageCircle size={18} />
               </a>
             </div>
