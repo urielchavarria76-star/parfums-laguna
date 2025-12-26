@@ -350,7 +350,7 @@ export const perfumes = [
     id: 25,
     name: "Jean Paul Gaultier Paradise Garden 75 ml",
     image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/a8pw7oeg_image.png",
-    bottlePrice: 1366,
+    bottlePrice: 1750,
     decant10ml: 185,
     promo2x10ml: 350,
     promo3x10ml: 500,
