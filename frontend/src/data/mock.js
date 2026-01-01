@@ -520,6 +520,46 @@ export const perfumes = [
     description: "Rosa atómica con oud, azafrán y notas animálicas. Una explosión de lujo y sofisticación.",
     category: "unisex",
     badge: "Lujo"
+  },
+  {
+    id: 54,
+    name: "ARMAF ODYSSEY AOUD 60 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/ka5r1pmi_image.png",
+    bottlePrice: 620,
+    originalPrice: 1400,
+    description: "Oud dorado con ámbar, especias orientales y maderas preciosas. Lujoso y distintivo.",
+    category: "unisex",
+    badge: "Árabe"
+  },
+  {
+    id: 55,
+    name: "ARMAF ODYSSEY DUBAI CHOCOLATE 100 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/bdq8o8fv_image.png",
+    bottlePrice: 750,
+    originalPrice: 1600,
+    description: "Fragancia gourmand con notas de chocolate, café y maderas cálidas. Irresistible y dulce.",
+    category: "unisex",
+    badge: "Nuevo"
+  },
+  {
+    id: 56,
+    name: "ARMAF ODYSSEY ARTISTO THE RED 100 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/a3hnfwsw_image.png",
+    bottlePrice: 800,
+    originalPrice: 1800,
+    description: "Intenso y apasionado con notas frutales, especiadas y un fondo amaderado. Audaz y seductor.",
+    category: "hombre",
+    badge: "Popular"
+  },
+  {
+    id: 57,
+    name: "ARMAF ODYSSEY WHITE EDITION 100 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/10ezzb4o_image.png",
+    bottlePrice: 740,
+    originalPrice: 1600,
+    description: "Fresco y elegante con notas cítricas, lavanda y almizcle blanco. Limpio y sofisticado.",
+    category: "hombre",
+    badge: "Clásico"
   }
 ];
 
