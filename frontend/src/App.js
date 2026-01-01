@@ -15,26 +15,37 @@ import ProductGrid from './components/sections/ProductGrid';
 import DecantGrid from './components/sections/DecantGrid';
 import WhatsAppButton from './components/sections/WhatsAppButton';
 
+// Effects
+import AnimatedBeams from './components/effects/AnimatedBeams';
+import GlowingOrbs from './components/effects/GlowingOrbs';
+
 // Home Page Component
 const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCartOpen }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-black">
-      <Header 
-        cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} 
-        onCartClick={() => setCartOpen(true)}
-        onMenuClick={() => setMenuOpen(true)}
-      />
+    <div className="min-h-screen bg-black relative overflow-hidden">
+      {/* Animated Background Effects */}
+      <AnimatedBeams />
+      <GlowingOrbs />
       
-      <main>
-        <Hero />
-        <Features />
-        <ProductGrid onAddToCart={addToCart} />
-        <DecantGrid onAddToCart={addToCart} />
-      </main>
+      {/* Main Content */}
+      <div className="relative z-10">
+        <Header 
+          cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)} 
+          onCartClick={() => setCartOpen(true)}
+          onMenuClick={() => setMenuOpen(true)}
+        />
+        
+        <main>
+          <Hero />
+          <Features />
+          <ProductGrid onAddToCart={addToCart} />
+          <DecantGrid onAddToCart={addToCart} />
+        </main>
 
-      <Footer />
+        <Footer />
+      </div>
 
       {/* Overlays */}
       <MobileMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
