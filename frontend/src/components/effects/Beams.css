@@ -1,0 +1,226 @@
+.beams-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.beams-gradient-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(201, 169, 98, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 50%, rgba(201, 169, 98, 0.1) 0%, transparent 40%),
+              radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 40%);
+}
+
+/* Vertical beams */
+.beams-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.beam {
+  position: absolute;
+  top: -20%;
+  height: 140%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(201, 169, 98, 0.1) 10%,
+    rgba(201, 169, 98, 0.5) 30%,
+    rgba(255, 215, 140, 0.8) 50%,
+    rgba(201, 169, 98, 0.5) 70%,
+    rgba(201, 169, 98, 0.1) 90%,
+    transparent 100%
+  );
+  filter: blur(2px);
+  animation: beamMove linear infinite;
+  transform-origin: top center;
+}
+
+@keyframes beamMove {
+  0% {
+    transform: translateY(-100%) scaleY(0.3) rotate(-2deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%) scaleY(1) rotate(2deg);
+    opacity: 0;
+  }
+}
+
+/* Glowing orbs */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: orbFloat ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 400px;
+  height: 400px;
+  top: -10%;
+  left: 10%;
+  background: radial-gradient(circle, rgba(201, 169, 98, 0.4) 0%, transparent 70%);
+  animation-duration: 20s;
+}
+
+.orb-2 {
+  width: 300px;
+  height: 300px;
+  top: 30%;
+  right: 5%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.3) 0%, transparent 70%);
+  animation-duration: 25s;
+  animation-delay: -5s;
+}
+
+.orb-3 {
+  width: 350px;
+  height: 350px;
+  bottom: 10%;
+  left: 30%;
+  background: radial-gradient(circle, rgba(255, 215, 140, 0.25) 0%, transparent 70%);
+  animation-duration: 18s;
+  animation-delay: -10s;
+}
+
+.orb-4 {
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  left: 60%;
+  background: radial-gradient(circle, rgba(201, 169, 98, 0.35) 0%, transparent 70%);
+  animation-duration: 22s;
+  animation-delay: -15s;
+}
+
+@keyframes orbFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, -40px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  75% {
+    transform: translate(40px, 30px) scale(1.05);
+  }
+}
+
+/* Light streaks - diagonal moving lights */
+.light-streak {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(201, 169, 98, 0.8) 50%,
+    transparent 100%
+  );
+  filter: blur(1px);
+  animation: streakMove linear infinite;
+}
+
+.streak-1 {
+  left: 20%;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+.streak-2 {
+  left: 50%;
+  animation-duration: 5s;
+  animation-delay: 1.5s;
+}
+
+.streak-3 {
+  left: 80%;
+  animation-duration: 4.5s;
+  animation-delay: 3s;
+}
+
+@keyframes streakMove {
+  0% {
+    transform: translateY(-100vh) translateX(-50px) rotate(15deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(50px) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+/* Sparkle particles */
+.sparkles {
+  position: absolute;
+  inset: 0;
+}
+
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #c9a962;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px rgba(201, 169, 98, 0.8),
+              0 0 20px 6px rgba(201, 169, 98, 0.4);
+  animation: sparkleFloat ease-in-out infinite;
+}
+
+@keyframes sparkleFloat {
+  0% {
+    transform: translateY(0) scale(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-10px) scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-60px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Add some variety to sparkles */
+.sparkle:nth-child(even) {
+  animation-direction: alternate;
+}
+
+.sparkle:nth-child(3n) {
+  width: 3px;
+  height: 3px;
+}
+
+.sparkle:nth-child(5n) {
+  width: 5px;
+  height: 5px;
+  box-shadow: 0 0 15px 5px rgba(255, 215, 140, 0.9),
+              0 0 30px 10px rgba(201, 169, 98, 0.5);
+}
