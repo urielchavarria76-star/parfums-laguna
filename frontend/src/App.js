@@ -38,6 +38,7 @@ const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCa
           <Features />
           <ProductGrid onAddToCart={addToCart} />
           <DecantGrid onAddToCart={addToCart} />
+          <AboutUs />
         </main>
 
         <Footer />
