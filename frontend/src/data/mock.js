@@ -403,7 +403,7 @@ export const perfumes = [
     format: "Atomizador 10 ml (spray) • Etiqueta",
     rating: 4.9,
     reviews: 21,
-    category: "mujer",
+    category: "hombre",
     badge: "Nuevo"
   },
   {
