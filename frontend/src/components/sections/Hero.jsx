@@ -18,33 +18,26 @@ const Hero = () => {
         <div className="hero-animation-container">
           {/* Shimmer light effect */}
           <div className="shimmer-light"></div>
+          <div className="shimmer-light shimmer-2"></div>
           
-          {/* Floating particles */}
-          <div className="particles">
-            {[...Array(20)].map((_, i) => (
-              <div
-                key={i}
-                className="particle"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 8}s`,
-                  animationDuration: `${6 + Math.random() * 6}s`,
-                }}
-              />
-            ))}
-          </div>
-          
-          {/* Glowing orbs */}
+          {/* Glowing orbs - Enhanced */}
           <div className="hero-orb orb-1"></div>
           <div className="hero-orb orb-2"></div>
           <div className="hero-orb orb-3"></div>
+          <div className="hero-orb orb-4"></div>
           
-          {/* Light rays from top */}
+          {/* Light rays from top - Enhanced */}
           <div className="light-rays">
             <div className="ray ray-1"></div>
             <div className="ray ray-2"></div>
             <div className="ray ray-3"></div>
+            <div className="ray ray-4"></div>
+            <div className="ray ray-5"></div>
           </div>
+          
+          {/* Gradient waves */}
+          <div className="gradient-wave wave-1"></div>
+          <div className="gradient-wave wave-2"></div>
         </div>
         
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent z-10" />
