@@ -7,138 +7,122 @@
   pointer-events: none;
 }
 
-/* Shimmer light sweep effect */
+/* Shimmer light sweep effect - Enhanced */
 .shimmer-light {
   position: absolute;
   top: 0;
   left: -100%;
-  width: 50%;
+  width: 60%;
   height: 100%;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(201, 169, 98, 0.1),
-    rgba(255, 255, 255, 0.15),
-    rgba(201, 169, 98, 0.1),
+    rgba(201, 169, 98, 0.15),
+    rgba(255, 255, 255, 0.25),
+    rgba(201, 169, 98, 0.15),
     transparent
   );
-  animation: shimmer-sweep 8s ease-in-out infinite;
+  animation: shimmer-sweep 6s ease-in-out infinite;
   transform: skewX(-20deg);
+}
+
+.shimmer-2 {
+  animation-delay: 3s;
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(245, 158, 11, 0.1),
+    rgba(255, 255, 255, 0.15),
+    rgba(245, 158, 11, 0.1),
+    transparent
+  );
 }
 
 @keyframes shimmer-sweep {
   0% {
     left: -100%;
-  }
-  100% {
-    left: 200%;
-  }
-}
-
-/* Floating particles */
-.particles {
-  position: absolute;
-  inset: 0;
-}
-
-.particle {
-  position: absolute;
-  bottom: 0;
-  width: 4px;
-  height: 4px;
-  background: #c9a962;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 
-    0 0 6px 2px rgba(201, 169, 98, 0.8),
-    0 0 12px 4px rgba(201, 169, 98, 0.4);
-  animation: particle-rise ease-out infinite;
-}
-
-@keyframes particle-rise {
-  0% {
-    transform: translateY(0) scale(0);
     opacity: 0;
   }
   10% {
-    opacity: 0.8;
-    transform: translateY(-20px) scale(1);
+    opacity: 1;
   }
   90% {
-    opacity: 0.6;
+    opacity: 1;
   }
   100% {
-    transform: translateY(-400px) scale(0.5);
+    left: 200%;
     opacity: 0;
   }
 }
 
-.particle:nth-child(odd) {
-  width: 3px;
-  height: 3px;
-}
-
-.particle:nth-child(3n) {
-  width: 5px;
-  height: 5px;
-  box-shadow: 
-    0 0 10px 3px rgba(255, 215, 140, 0.9),
-    0 0 20px 6px rgba(201, 169, 98, 0.5);
-}
-
-/* Glowing orbs */
+/* Glowing orbs - Enhanced and bigger */
 .hero-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(100px);
   animation: orb-move ease-in-out infinite;
 }
 
 .orb-1 {
-  width: 300px;
-  height: 300px;
-  top: -10%;
-  right: 10%;
-  background: radial-gradient(circle, rgba(201, 169, 98, 0.4) 0%, transparent 70%);
-  animation-duration: 12s;
+  width: 450px;
+  height: 450px;
+  top: -15%;
+  right: 5%;
+  background: radial-gradient(circle, rgba(201, 169, 98, 0.5) 0%, transparent 70%);
+  animation-duration: 10s;
 }
 
 .orb-2 {
-  width: 250px;
-  height: 250px;
-  top: 30%;
-  left: -5%;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.3) 0%, transparent 70%);
-  animation-duration: 15s;
-  animation-delay: -5s;
+  width: 400px;
+  height: 400px;
+  top: 20%;
+  left: -10%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.4) 0%, transparent 70%);
+  animation-duration: 12s;
+  animation-delay: -4s;
 }
 
 .orb-3 {
-  width: 200px;
-  height: 200px;
-  bottom: 10%;
-  right: 20%;
-  background: radial-gradient(circle, rgba(255, 215, 140, 0.25) 0%, transparent 70%);
-  animation-duration: 10s;
-  animation-delay: -3s;
+  width: 350px;
+  height: 350px;
+  bottom: 0%;
+  right: 25%;
+  background: radial-gradient(circle, rgba(255, 215, 140, 0.35) 0%, transparent 70%);
+  animation-duration: 8s;
+  animation-delay: -2s;
+}
+
+.orb-4 {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 40%;
+  background: radial-gradient(circle, rgba(201, 169, 98, 0.3) 0%, transparent 70%);
+  animation-duration: 14s;
+  animation-delay: -6s;
 }
 
 @keyframes orb-move {
   0%, 100% {
     transform: translate(0, 0) scale(1);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translate(40px, -30px) scale(1.15);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-30px, 20px) scale(0.95);
     opacity: 0.6;
   }
-  33% {
-    transform: translate(30px, -20px) scale(1.1);
+  75% {
+    transform: translate(20px, 40px) scale(1.1);
     opacity: 0.8;
-  }
-  66% {
-    transform: translate(-20px, 10px) scale(0.9);
-    opacity: 0.5;
   }
 }
 
-/* Light rays from top */
+/* Light rays from top - Enhanced with more rays */
 .light-rays {
   position: absolute;
   top: 0;
@@ -150,14 +134,14 @@
 
 .ray {
   position: absolute;
-  top: -20%;
-  width: 2px;
-  height: 60%;
+  top: -30%;
+  width: 3px;
+  height: 80%;
   background: linear-gradient(
     180deg,
-    rgba(201, 169, 98, 0.6),
-    rgba(201, 169, 98, 0.3) 30%,
-    rgba(201, 169, 98, 0.1) 60%,
+    rgba(201, 169, 98, 0.8),
+    rgba(201, 169, 98, 0.5) 20%,
+    rgba(201, 169, 98, 0.2) 50%,
     transparent
   );
   animation: ray-pulse ease-in-out infinite;
@@ -165,32 +149,90 @@
 }
 
 .ray-1 {
-  left: 20%;
-  animation-duration: 4s;
+  left: 15%;
+  animation-duration: 3.5s;
   animation-delay: 0s;
 }
 
 .ray-2 {
-  left: 50%;
-  animation-duration: 5s;
-  animation-delay: 1.5s;
-  width: 3px;
+  left: 35%;
+  animation-duration: 4s;
+  animation-delay: 0.8s;
+  width: 4px;
 }
 
 .ray-3 {
-  left: 75%;
+  left: 55%;
+  animation-duration: 3s;
+  animation-delay: 1.6s;
+}
+
+.ray-4 {
+  left: 70%;
   animation-duration: 4.5s;
-  animation-delay: 3s;
+  animation-delay: 2.4s;
+  width: 2px;
+}
+
+.ray-5 {
+  left: 85%;
+  animation-duration: 3.8s;
+  animation-delay: 3.2s;
+  width: 3px;
 }
 
 @keyframes ray-pulse {
   0%, 100% {
     opacity: 0;
-    transform: scaleY(0.5) rotate(-5deg);
+    transform: scaleY(0.3) rotate(-3deg);
   }
   50% {
-    opacity: 0.7;
-    transform: scaleY(1) rotate(5deg);
+    opacity: 0.9;
+    transform: scaleY(1.2) rotate(3deg);
+  }
+}
+
+/* Gradient waves */
+.gradient-wave {
+  position: absolute;
+  width: 200%;
+  height: 50%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(201, 169, 98, 0.08) 50%,
+    transparent
+  );
+  animation: wave-move ease-in-out infinite;
+}
+
+.wave-1 {
+  top: 20%;
+  left: -50%;
+  animation-duration: 15s;
+  transform: rotate(-5deg);
+}
+
+.wave-2 {
+  bottom: 10%;
+  right: -50%;
+  animation-duration: 18s;
+  animation-delay: -7s;
+  transform: rotate(5deg);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(245, 158, 11, 0.06) 50%,
+    transparent
+  );
+}
+
+@keyframes wave-move {
+  0%, 100% {
+    transform: translateX(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(10%) rotate(5deg);
   }
 }
 
@@ -201,7 +243,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 30%;
+  height: 25%;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
   pointer-events: none;
 }
