@@ -13,6 +13,7 @@ import Hero from './components/sections/Hero';
 import Features from './components/sections/Features';
 import ProductGrid from './components/sections/ProductGrid';
 import DecantGrid from './components/sections/DecantGrid';
+import AboutUs from './components/sections/AboutUs';
 import WhatsAppButton from './components/sections/WhatsAppButton';
 
 // Effects - removed, animation is now in Hero
