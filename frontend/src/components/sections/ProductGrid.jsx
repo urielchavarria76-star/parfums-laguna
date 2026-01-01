@@ -30,17 +30,47 @@ const ProductGrid = ({ onAddToCart }) => {
     return () => observer.disconnect();
   }, []);
 
+  // Function to sort products by brand
+  const sortByBrand = (products) => {
+    const getBrand = (name) => {
+      const brandPatterns = [
+        'ARMAF ODYSSEY', 'ARMAF', 'LATTAFA', 'JEAN LOWE', 'JEAN PAUL GAULTIER',
+        'VERSACE', 'VIKTOR & ROLF', 'MANCERA', 'XERJOFF', 'VALENTINO',
+        'AL HARAMAIN', 'RASASI', 'AZZARO', 'PACO RABANNE', 'GIORGIO ARMANI',
+        'HUGO BOSS', 'YSL', 'RAYHAAN', 'THOMAS KOSMALA', 'INITIO', 'AFNAN',
+        'BHARARA', 'MAISON ALHAMBRA', 'NITRO'
+      ];
+      const upperName = name.toUpperCase();
+      for (const brand of brandPatterns) {
+        if (upperName.includes(brand)) return brand;
+      }
+      return 'OTROS';
+    };
+    
+    return [...products].sort((a, b) => {
+      const brandA = getBrand(a.name);
+      const brandB = getBrand(b.name);
+      if (brandA === brandB) return 0;
+      return brandA.localeCompare(brandB);
+    });
+  };
+
   const getFilteredProducts = () => {
+    let filtered;
     switch(activeTab) {
       case 'hombre':
-        return perfumes.filter(p => p.category === 'hombre');
+        filtered = perfumes.filter(p => p.category === 'hombre');
+        break;
       case 'mujer':
-        return perfumes.filter(p => p.category === 'mujer');
+        filtered = perfumes.filter(p => p.category === 'mujer');
+        break;
       case 'lanzamientos':
-        return perfumes.filter(p => [42, 43, 44, 45, 46, 37, 38, 39, 40, 41, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57].includes(p.id));
+        filtered = perfumes.filter(p => [42, 43, 44, 45, 46, 37, 38, 39, 40, 41, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57].includes(p.id));
+        break;
       default:
-        return perfumes; // Show ALL perfumes
+        filtered = perfumes;
     }
+    return sortByBrand(filtered);
   };
 
   const filteredProducts = getFilteredProducts();
