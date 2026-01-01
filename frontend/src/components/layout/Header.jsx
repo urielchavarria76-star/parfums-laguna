@@ -27,7 +27,7 @@ const Header = ({ cartCount, onCartClick, onMenuClick }) => {
               Inicio
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9a962] transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="/catalogo" className="text-gray-400 hover:text-white transition-all duration-300 text-sm tracking-wider uppercase relative group">
+            <a href="#productos" className="text-gray-400 hover:text-white transition-all duration-300 text-sm tracking-wider uppercase relative group">
               Catálogo
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9a962] transition-all duration-300 group-hover:w-full"></span>
             </a>
