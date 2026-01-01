@@ -24,10 +24,13 @@ const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="flex flex-col items-center text-center"
+              className="flex flex-col items-center text-center group cursor-pointer animate-fadeInUp opacity-0"
+              style={{ animationDelay: `${index * 0.2}s`, animationFillMode: 'forwards' }}
             >
-              <feature.icon className="w-6 h-6 text-[#c9a962] mb-3" />
-              <span className="text-gray-400 text-sm">{feature.text}</span>
+              <div className="transition-all duration-500 group-hover:scale-125 group-hover:text-[#d4b872]">
+                <feature.icon className="w-6 h-6 text-[#c9a962] mb-3 transition-all duration-300" />
+              </div>
+              <span className="text-gray-400 text-sm transition-all duration-300 group-hover:text-white">{feature.text}</span>
             </div>
           ))}
         </div>
