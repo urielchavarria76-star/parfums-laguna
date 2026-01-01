@@ -1,0 +1,67 @@
+.laser-flow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.laser-flow-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ambient glow effects */
+.laser-flow-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: glow-pulse ease-in-out infinite;
+  opacity: 0.4;
+}
+
+.glow-1 {
+  width: 500px;
+  height: 300px;
+  top: 10%;
+  left: -5%;
+  background: radial-gradient(ellipse, rgba(201, 169, 98, 0.4) 0%, transparent 70%);
+  animation-duration: 15s;
+}
+
+.glow-2 {
+  width: 400px;
+  height: 250px;
+  top: 40%;
+  right: -5%;
+  background: radial-gradient(ellipse, rgba(245, 158, 11, 0.3) 0%, transparent 70%);
+  animation-duration: 18s;
+  animation-delay: -5s;
+}
+
+.glow-3 {
+  width: 450px;
+  height: 280px;
+  bottom: 5%;
+  left: 30%;
+  background: radial-gradient(ellipse, rgba(255, 215, 140, 0.25) 0%, transparent 70%);
+  animation-duration: 20s;
+  animation-delay: -10s;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.1);
+    opacity: 0.5;
+  }
+}
