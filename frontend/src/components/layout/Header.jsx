@@ -8,40 +8,43 @@ const Header = ({ cartCount, onCartClick, onMenuClick }) => {
         <div className="flex items-center justify-between h-20">
           {/* Mobile Menu Button */}
           <button 
-            className="lg:hidden text-white hover:text-[#c9a962] transition-colors"
+            className="lg:hidden text-white hover:text-[#c9a962] transition-all duration-300 hover:scale-110"
             onClick={onMenuClick}
           >
             <Menu size={22} />
           </button>
 
           {/* Logo */}
-          <a href="/" className="flex items-center">
-            <h1 className="text-xl font-light text-white tracking-wider">
-              <span className="text-[#c9a962]">Parfums</span> TRC
+          <a href="/" className="flex items-center group">
+            <h1 className="text-xl font-light text-white tracking-wider transition-all duration-300 group-hover:scale-105">
+              <span className="text-[#c9a962] transition-all duration-300 group-hover:text-[#d4b872]">Parfums</span> TRC
             </h1>
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-12">
-            <a href="/" className="text-gray-400 hover:text-white transition-colors text-sm tracking-wider uppercase">
+            <a href="/" className="text-gray-400 hover:text-white transition-all duration-300 text-sm tracking-wider uppercase relative group">
               Inicio
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9a962] transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="/catalogo" className="text-gray-400 hover:text-white transition-colors text-sm tracking-wider uppercase">
+            <a href="/catalogo" className="text-gray-400 hover:text-white transition-all duration-300 text-sm tracking-wider uppercase relative group">
               Catálogo
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9a962] transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="/contacto" className="text-gray-400 hover:text-white transition-colors text-sm tracking-wider uppercase">
+            <a href="/contacto" className="text-gray-400 hover:text-white transition-all duration-300 text-sm tracking-wider uppercase relative group">
               Contacto
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9a962] transition-all duration-300 group-hover:w-full"></span>
             </a>
           </nav>
 
           {/* Cart */}
           <button 
             onClick={onCartClick}
-            className="text-white hover:text-[#c9a962] transition-colors relative"
+            className="text-white hover:text-[#c9a962] transition-all duration-300 relative group hover:scale-110"
           >
-            <ShoppingCart size={20} />
+            <ShoppingCart size={20} className="transition-transform duration-300 group-hover:rotate-12" />
             {cartCount > 0 && (
-              <span className="absolute -top-2 -right-2 bg-[#c9a962] text-black text-xs font-medium w-5 h-5 rounded-full flex items-center justify-center">
+              <span className="absolute -top-2 -right-2 bg-[#c9a962] text-black text-xs font-medium w-5 h-5 rounded-full flex items-center justify-center animate-pulse">
                 {cartCount}
               </span>
             )}
