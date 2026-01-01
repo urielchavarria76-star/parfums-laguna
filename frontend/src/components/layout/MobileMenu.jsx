@@ -51,7 +51,9 @@ const MobileMenu = ({ isOpen, onClose }) => {
         {/* Contact Button */}
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-[#333]">
           <a
-            href="https://wa.me/+528682353290"
+            href="https://wa.me/528712584098?text=Hola%20Uriel%2C%20me%20interesa%20un%20perfume%20de%20Parfums%20TRC"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full py-3 bg-[#25D366] text-white rounded-lg font-medium hover:bg-[#20bd5a] transition-colors"
           >
             <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
