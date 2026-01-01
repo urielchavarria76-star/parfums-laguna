@@ -500,6 +500,26 @@ export const perfumes = [
     description: "Fragancia náutica de lujo con sal marina, madera de cedro y ámbar gris. Exclusivo y refinado.",
     category: "unisex",
     badge: "Lujo"
+  },
+  {
+    id: 52,
+    name: "THOMAS KOSMALA No 4 Après l'Amour 100 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/2svyt974_image.png",
+    bottlePrice: 2300,
+    originalPrice: 4800,
+    description: "Fragancia sensual parisina con notas de vainilla, sándalo y almizcle blanco. Íntimo y adictivo.",
+    category: "unisex",
+    badge: "Premium"
+  },
+  {
+    id: 53,
+    name: "INITIO ATOMIC ROSE 90 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/221tmlgx_image.png",
+    bottlePrice: 4600,
+    originalPrice: 9000,
+    description: "Rosa atómica con oud, azafrán y notas animálicas. Una explosión de lujo y sofisticación.",
+    category: "unisex",
+    badge: "Lujo"
   }
 ];
 
