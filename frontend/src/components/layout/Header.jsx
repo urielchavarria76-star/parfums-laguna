@@ -31,7 +31,7 @@ const Header = ({ cartCount, onCartClick, onMenuClick }) => {
               Catálogo
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9a962] transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="/contacto" className="text-gray-400 hover:text-white transition-all duration-300 text-sm tracking-wider uppercase relative group">
+            <a href="https://wa.me/528712584098?text=Hola%20Uriel%2C%20me%20interesa%20un%20perfume%20de%20Parfums%20TRC" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-all duration-300 text-sm tracking-wider uppercase relative group">
               Contacto
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c9a962] transition-all duration-300 group-hover:w-full"></span>
             </a>
