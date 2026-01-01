@@ -23,8 +23,6 @@ const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCa
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
-      {/* Animated Background Effects */}
-      <LaserFlow />
       
       {/* Main Content */}
       <div className="relative z-10">
