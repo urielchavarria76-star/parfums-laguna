@@ -21,7 +21,7 @@ const Footer = () => {
             <h3 className="text-sm tracking-wider uppercase text-gray-400 mb-4">Enlaces</h3>
             <ul className="space-y-3">
               <li><a href="/" className="text-gray-500 hover:text-white transition-colors text-sm">Inicio</a></li>
-              <li><a href="/catalogo" className="text-gray-500 hover:text-white transition-colors text-sm">Catálogo</a></li>
+              <li><a href="#productos" className="text-gray-500 hover:text-white transition-colors text-sm">Catálogo</a></li>
               <li><a href="https://wa.me/528712584098?text=Hola%20Uriel%2C%20me%20interesa%20un%20perfume%20de%20Parfums%20TRC" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors text-sm">Contacto</a></li>
             </ul>
           </div>
