@@ -10,7 +10,7 @@ const tabs = [
 
 const ProductGrid = ({ onAddToCart }) => {
   const [activeTab, setActiveTab] = useState('vendidos');
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true); // Changed to true by default
   const sectionRef = useRef(null);
 
   useEffect(() => {
