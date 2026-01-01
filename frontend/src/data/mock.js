@@ -414,7 +414,7 @@ export const perfumes = [
   {
     id: 43,
     name: "Valentino Uomo Born In Roma Extradose Parfum 100 ml",
-    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/ck6hfbtt_image.png",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/526jdu0p_image.png",
     bottlePrice: 3400,
     originalPrice: 6500,
     description: "Vainilla intensa con salvia y vetiver ahumado. Elegante y magnético.",
@@ -434,7 +434,7 @@ export const perfumes = [
   {
     id: 45,
     name: "Al Haramain Amber Oud Aqua Dubai 100 ml Extrait",
-    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/526jdu0p_image.png",
+    image: "https://customer-assets.emergentagent.com/job_oudroma-fragrances/artifacts/ck6hfbtt_image.png",
     bottlePrice: 1200,
     originalPrice: 2800,
     description: "Oud acuático con ámbar, notas marinas y maderas. Fresco y lujoso.",
