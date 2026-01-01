@@ -93,6 +93,8 @@ const ProductGrid = ({ onAddToCart }) => {
 const ProductCard = ({ product, onAddToCart, index, isVisible }) => {
   const [isHovered, setIsHovered] = useState(false);
   const displayPrice = product.bottlePrice || product.decant10ml;
+  const originalPrice = product.originalPrice;
+  const discount = originalPrice ? Math.round((1 - displayPrice / originalPrice) * 100) : 0;
 
   return (
     <div 
@@ -102,12 +104,19 @@ const ProductCard = ({ product, onAddToCart, index, isVisible }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image Container */}
-      <div className={`relative aspect-square overflow-hidden bg-[#0a0a0a] mb-5 transition-all duration-500 ${isHovered ? 'shadow-2xl shadow-[#c9a962]/20' : ''}`}>
+      <div className={`relative aspect-square overflow-hidden bg-[#0a0a0a] mb-4 transition-all duration-500 ${isHovered ? 'shadow-2xl shadow-[#c9a962]/20' : ''}`}>
         <img
           src={product.image}
           alt={product.name}
           className={`w-full h-full object-contain p-6 transition-all duration-700 ${isHovered ? 'scale-110 rotate-2' : 'scale-100 rotate-0'}`}
         />
+        
+        {/* Discount Badge */}
+        {discount > 0 && (
+          <div className="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2 py-1 animate-pulse">
+            -{discount}%
+          </div>
+        )}
         
         {/* Glow effect on hover */}
         <div className={`absolute inset-0 bg-gradient-to-t from-[#c9a962]/20 to-transparent transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`} />
@@ -124,13 +133,32 @@ const ProductCard = ({ product, onAddToCart, index, isVisible }) => {
       </div>
 
       {/* Info */}
-      <div className="text-center">
+      <div className="text-center px-2">
         <h3 className={`text-white text-sm font-light mb-2 line-clamp-1 transition-all duration-300 ${isHovered ? 'text-[#c9a962]' : ''}`}>
           {product.name}
         </h3>
-        <p className={`text-[#c9a962] text-sm transition-all duration-300 ${isHovered ? 'scale-110' : ''}`}>
-          ${displayPrice?.toLocaleString()} MXN
+        
+        {/* Description */}
+        <p className={`text-gray-500 text-xs mb-3 line-clamp-2 transition-all duration-500 ${isHovered ? 'text-gray-400' : ''}`}>
+          {product.description}
         </p>
+        
+        {/* Price Section with Discount */}
+        <div className="space-y-1">
+          {originalPrice && (
+            <p className="text-gray-500 text-xs line-through">
+              ${originalPrice.toLocaleString()} MXN
+            </p>
+          )}
+          <p className={`text-[#c9a962] font-semibold transition-all duration-300 ${isHovered ? 'scale-110 text-lg' : 'text-base'}`}>
+            ${displayPrice?.toLocaleString()} MXN
+          </p>
+          {discount > 0 && (
+            <p className="text-green-500 text-xs font-medium animate-pulse">
+              ¡Ahorra {discount}%!
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );
