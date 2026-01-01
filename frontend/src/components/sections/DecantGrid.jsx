@@ -14,7 +14,7 @@ const calculateDecantPrice = (bottlePrice) => {
 
 const DecantGrid = ({ onAddToCart }) => {
   const [hoveredId, setHoveredId] = useState(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const sectionRef = useRef(null);
 
   useEffect(() => {
