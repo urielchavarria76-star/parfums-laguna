@@ -5,7 +5,7 @@ import "./Beams.css";
 const Beams = () => {
   // Generate curved beam paths
   const beamPaths = useMemo(() => {
-    return Array.from({ length: 40 }, (_, i) => {
+    return Array.from({ length: 25 }, (_, i) => {
       const startX = Math.random() * 100;
       const startY = -10;
       const endX = startX + (Math.random() - 0.5) * 40;
