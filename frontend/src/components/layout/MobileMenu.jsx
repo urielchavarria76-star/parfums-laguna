@@ -6,12 +6,8 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
   const menuItems = [
     { name: 'Inicio', href: '/' },
-    { name: 'Catálogo', href: '/catalogo' },
-    { name: 'Más Vendidos', href: '/mas-vendidos' },
-    { name: 'Decants', href: '/decants' },
-    { name: 'Hombre', href: '/hombre' },
-    { name: 'Mujer', href: '/mujer' },
-    { name: 'Perfumes Árabes', href: '/arabes' },
+    { name: 'Catálogo', href: '#productos' },
+    { name: 'Contacto', href: 'https://wa.me/528712584098?text=Hola%20Uriel%2C%20me%20interesa%20un%20perfume%20de%20Parfums%20TRC', external: true },
   ];
 
   return (
