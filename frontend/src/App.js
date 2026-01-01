@@ -15,8 +15,7 @@ import ProductGrid from './components/sections/ProductGrid';
 import DecantGrid from './components/sections/DecantGrid';
 import WhatsAppButton from './components/sections/WhatsAppButton';
 
-// Effects
-import LaserFlow from './components/effects/LaserFlow';
+// Effects - removed, animation is now in Hero
 
 // Home Page Component
 const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCartOpen }) => {
