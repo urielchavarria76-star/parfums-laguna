@@ -13,11 +13,11 @@ export const perfumes = [
   },
   {
     id: 2,
-    name: "MINI SET LATTAFA 5 ml c/u",
+    name: "MINI SET LATTAFA 20 ml c/u",
     image: "https://oudroma.com/cdn/shop/files/61u7jI-lqaL._AC_UF1000_1000_QL80.jpg?v=1766179873&width=533",
     bottlePrice: 990,
     originalPrice: 2800,
-    description: "Set de 5 fragancias árabes premium: Nebras, Art of Wood, Art of Universe, Ansaam y Kashan. Perfecto para descubrir nuevos aromas.",
+    description: "Set de 5 fragancias árabes premium de 20ml cada una: Nebras, Art of Wood, Art of Universe, Ansaam y Kashan. Perfecto para descubrir nuevos aromas.",
     category: "unisex",
     badge: "Set Exclusivo"
   },
