@@ -16,8 +16,7 @@ import DecantGrid from './components/sections/DecantGrid';
 import WhatsAppButton from './components/sections/WhatsAppButton';
 
 // Effects
-import AnimatedBeams from './components/effects/AnimatedBeams';
-import GlowingOrbs from './components/effects/GlowingOrbs';
+import Beams from './components/effects/Beams';
 
 // Home Page Component
 const Home = ({ cart, addToCart, updateQuantity, removeFromCart, cartOpen, setCartOpen }) => {
