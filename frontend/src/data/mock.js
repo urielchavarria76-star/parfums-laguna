@@ -450,6 +450,56 @@ export const perfumes = [
     description: "Fresco alpino con notas verdes, lavanda y almizcle. Aire puro de montaña.",
     category: "hombre",
     badge: "Económico"
+  },
+  {
+    id: 47,
+    name: "LATTAFA NEBRAS ELIXIR 100 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/l67oopjh_image.png",
+    bottlePrice: 1100,
+    originalPrice: 2500,
+    description: "Elixir árabe intenso con oud, ámbar y especias orientales. Misterioso y adictivo.",
+    category: "unisex",
+    badge: "Árabe"
+  },
+  {
+    id: 48,
+    name: "ARMAF ODYSSEY MEGA 60 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/8xtidory_image.png",
+    bottlePrice: 600,
+    originalPrice: 1400,
+    description: "Fragancia potente con notas amaderadas, especiadas y un toque dulce. Proyección masiva.",
+    category: "hombre",
+    badge: "Popular"
+  },
+  {
+    id: 49,
+    name: "YSL MYSLF 100 ml EDP TRAVEL SET + 10 ml",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/oaqwq5pm_image.png",
+    bottlePrice: 2500,
+    originalPrice: 5000,
+    description: "Set exclusivo con flor de naranjo, bergamota y ambroxan. Moderno y sofisticado.",
+    category: "hombre",
+    badge: "¡OFERTÓN!"
+  },
+  {
+    id: 50,
+    name: "RAYHAAN OBSIDIAN 100 ml EDP",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/an9etbcm_image.png",
+    bottlePrice: 900,
+    originalPrice: 2000,
+    description: "Fragancia oscura y seductora con notas de cuero, especias y maderas ahumadas.",
+    category: "hombre",
+    badge: "Nuevo"
+  },
+  {
+    id: 51,
+    name: "XERJOFF 40 KNOTS 50 ml",
+    image: "https://customer-assets.emergentagent.com/job_scent-store-front/artifacts/imonx25p_image.png",
+    bottlePrice: 3520,
+    originalPrice: 7000,
+    description: "Fragancia náutica de lujo con sal marina, madera de cedro y ámbar gris. Exclusivo y refinado.",
+    category: "unisex",
+    badge: "Lujo"
   }
 ];
 
